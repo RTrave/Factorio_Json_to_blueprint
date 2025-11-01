@@ -2,6 +2,7 @@
 #include "parr.h"
 #include "compress.h"
 #include "base64.h"
+#include "libblueprint.h"
 
 char*	blueprint_json_to_string(char* json)
 {

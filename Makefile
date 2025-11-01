@@ -14,7 +14,7 @@ NAME_LIB_BASE64 =	lib$(LIB_BASE64).o
 
 CFLAGS =	-fPIC -fvisibility=hidden -Wall -Wextra -Wconversion -Wpedantic
 LDFLAGS =	-shared -L$(DIR_LIB_BLUEPRINT) -L$(DIR_LIB_ZLIB)$(DIR_BUILD) -Wl,-rpath,$(DIR_LIB_ZLIB)$(DIR_BUILD)
-LDLIBS =	-l$(LIB_BLUEPRINT) -l$(LIB_ZLIB) $(DIR_LIB_BASE64)$(DIR_LIB)lib$(LIB_BASE64).o
+LDLIBS =	-l$(LIB_BLUEPRINT) -l$(LIB_ZLIB) $(DIR_LIB_BASE64)$(DIR_LIB)$(NAME_LIB_BASE64)
 
 # Directories
 
