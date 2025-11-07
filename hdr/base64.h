@@ -11,4 +11,6 @@ typedef struct	parr	t_parr;
 
 /* ----- PROTOTYPES ----- */
 
+// base64/
+//	base64.c
 char	*blueprint_base64(t_parr *src);

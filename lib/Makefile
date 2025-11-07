@@ -1,34 +1,37 @@
 # Compilation parameters
 
-NAME =		libblueprint.a
+NAME :=	libblueprint.a
 
-CC =		clang
+CC :=	clang
 
 CFLAGS =	-Wall -Wextra -Wconversion -Wpedantic
 
 # Directories
 
-DIR_HDR =	hdr/
-DIR_SRC =	src/
-DIR_OBJ =	obj/
+DIR_HDR :=	hdr/
+DIR_SRC :=	src/
+DIR_OBJ :=	obj/
 
-DIR_LST = 	lst/
-DIR_PAR =	parr/
+DIR_FIL :=	file/
+DIR_LST := 	lst/
+DIR_PAR :=	parr/
 
 # Colors
 
-COLOR_DEFAULT =	\033[0m
-COLOR_GREEN =	\033[32;1m
-COLOR_BLUE =	\033[34;1m
-COLOR_WHITE =	\033[97;1m
+COLOR_DEFAULT :=	\033[0m
+COLOR_GREEN :=		\033[32;1m
+COLOR_BLUE :=		\033[34;1m
+COLOR_WHITE :=		\033[97;1m
 
 # Source headers
 
-HDR =	$(DIR_HDR)
+HDR :=	$(DIR_HDR)
 
 # Source code
 
-SRC =	$(DIR_LST)new_back.c \
+SRC :=	$(DIR_FIL)open.c \
+	$(DIR_FIL)close.c \
+	$(DIR_LST)new_back.c \
 	$(DIR_LST)to_obj.c \
 	$(DIR_LST)clear.c \
 	$(DIR_PAR)tools.c \
@@ -37,7 +40,7 @@ SRC =	$(DIR_LST)new_back.c \
 
 # Compiled objects
 
-OBJ = $(addprefix $(DIR_OBJ), $(SRC:.c=.o))
+OBJ :=	$(addprefix $(DIR_OBJ), $(SRC:.c=.o))
 
 # Compilation
 
