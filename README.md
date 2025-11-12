@@ -35,9 +35,17 @@ make lib
 
 `make cleanblueprint` removes the executable and library's object files.
 
-`make re` removes everything that got compiled and recompiles the dependency libraries, the executable and the library.
+`make reall` removes everything that got compiled and recompiles the dependency libraries, the executable and the library.
 
-`make reblueprint` removes the executable and library's object files and recompiles the executable and the library.
+`make reallblueprint` removes the executable and library's object files and recompiles the executable and the library.
+
+`make re` removes everything that got compiled and recompiles the dependency libraries and the executable.
+
+`make reblueprint` removes the executable and library's object files and recompiles the executable.
+
+`make relib` removes everything that got compiled and recompiles the dependency libraries and the library.
+
+`make relibblueprint` removes the executable and library's object files and recompiles the library.
 
 ## USAGE
 

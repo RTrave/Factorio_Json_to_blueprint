@@ -148,8 +148,16 @@ cleanblueprint :
 	@ rm -rf $(DIR_OBJ)
 	@ echo "$(COLOR_WHITE)[$(NAME_EXE) & $(NAME_LIB)] - $(COLOR_BLUE)Objects cleaned.$(COLOR_DEFAULT)"
 
-re : fclean all
+reall : fclean all
 
-reblueprint : cleanblueprint all
+reallblueprint : cleanblueprint all
 
-.PHONY : all lib fclean clean cleanblueprint re reblueprint
+re : fclean $(NAME_EXE)
+
+reblueprint : cleanblueprint $(NAME_EXE)
+
+relib : fclean lib
+
+relibblueprint : clean lib
+
+.PHONY : all lib fclean clean cleanblueprint reall reallblueprint re reblueprint relib relibblueprint
