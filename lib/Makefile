@@ -50,7 +50,7 @@ $(NAME) : $(OBJ)
 
 $(DIR_OBJ)%.o : $(DIR_SRC)%.c
 	@ mkdir -p $(dir $@)
-	@ $(CC) $(CFLAGS) $(addprefix -I,$(HDR)) -c $^ -o $@
+	@ $(CC) $(CFLAGS) $(addprefix -I, $(HDR)) -c $^ -o $@
 
 # Rules
 

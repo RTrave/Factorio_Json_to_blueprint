@@ -96,11 +96,11 @@ $(NAME_LIB) : $(OBJ_LIB) $(NAME_LIB_BLUEPRINT) $(NAME_LIB_ZLIB) $(NAME_LIB_BASE6
 
 $(DIR_OBJ)$(DIR_OBJ_EXE)%.o : $(DIR_SRC)%.c
 	@ mkdir -p $(dir $@)
-	@ $(CC) $(CFLAGS) $(addprefix -I,$(HDR)) -c $^ -o $@
+	@ $(CC) $(CFLAGS) $(addprefix -I, $(HDR)) -c $^ -o $@
 
 $(DIR_OBJ)$(DIR_OBJ_LIB)%.o : $(DIR_SRC)%.c
 	@ mkdir -p $(dir $@)
-	@ $(CC) $(CFLAGS) $(addprefix -I,$(HDR)) -c $^ -o $@
+	@ $(CC) $(CFLAGS) $(addprefix -I, $(HDR)) -c $^ -o $@
 
 # Libraries
 
