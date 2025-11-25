@@ -9,22 +9,22 @@
 /* ----- MACROS ----- */
 
 // Function macros
-#define SET_REQUIREMENT(requirement)		((requirement & REQUIREMENT_MASK) << REQUIREMENT_POS)
-#define SET_PERMISSION(permission)		((permission & PERMISSION_MASK) << PERMISSION_POS)
-#define GET_REQUIREMENT(info)			((info >> REQUIREMENT_POS) & REQUIREMENT_MASK)
-#define GET_PERMISSION(info, permission)	((info >> PERMISSION_POS) & PERMISSION_MASK & permission)
+#define SET_REQUIREMENT(requirement)	((requirement & MASK_REQUIREMENT) << POS_REQUIREMENT)
+#define SET_PERMISSION(permission)	((permission & MASK_PERMISSION) << POS_PERMISSION)
+#define GET_REQUIREMENT(info)		((info >> POS_REQUIREMENT) & MASK_REQUIREMENT)
+#define GET_PERMISSION(info, mask)	((info >> POS_PERMISSION) & MASK_PERMISSION & mask)
 
 // Bit masks
-#define REQUIREMENT_MASK	3
-#define PERMISSION_MASK		7
+#define MASK_REQUIREMENT	3
+#define MASK_PERMISSION		7
 
 // Bit positions
-#define REQUIREMENT_POS	0
-#define PERMISSION_POS	2
+#define POS_REQUIREMENT	0
+#define POS_PERMISSION	2
 
 // Function fopen modes
-#define FOPEN_READ_MODE		"r"
-#define FOPEN_WRITE_MODE	"w"
+#define FOPEN_MODE_READ		"r"
+#define FOPEN_MODE_WRITE	"w"
 
 /* ----- ENUMERATIONS ----- */
 
