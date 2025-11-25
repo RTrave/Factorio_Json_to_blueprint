@@ -3,6 +3,7 @@
 /* ----- INCLUDES ----- */
 
 #include <stdbool.h>
+#include <stddef.h>
 
 /* ----- STRUCTURES ----- */
 

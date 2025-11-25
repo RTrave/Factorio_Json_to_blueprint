@@ -1,7 +1,7 @@
 #include <sys/stat.h>
 #include <stdlib.h>
-#include "file.h"
-#include "error.h"
+#include "../../lib/hdr/file.h"
+#include "../../hdr/error.h"
 
 char	*read_file(t_file *file)
 {

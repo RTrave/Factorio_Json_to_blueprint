@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <string.h>
-#include "libbase64.h"
-#include "parr.h"
-#include "base64.h"
-#include "blueprint.h"
-#include "error.h"
+#include "../../submodules/base64/include/libbase64.h"
+#include "../../lib/hdr/parr.h"
+#include "../../hdr/base64.h"
+#include "../../hdr/blueprint.h"
+#include "../../hdr/error.h"
 
 char	*blueprint_base64(t_parr *src)
 {

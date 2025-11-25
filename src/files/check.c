@@ -1,8 +1,9 @@
 #include <sys/stat.h>
 #include <unistd.h>
-#include "file.h"
-#include "parr.h"
-#include "error.h"
+#include "../../lib/hdr/file.h"
+#include "../../hdr/error.h"
+#include "../../lib/hdr/parr.h"
+//#include "error.h"
 
 bool	check_files(t_parr *files)
 {

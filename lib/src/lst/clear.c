@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "lst.h"
+#include "../../../lib/hdr/lst.h"
 
 void	lst_clear(t_lst **lst, void (*del)(void*))
 {

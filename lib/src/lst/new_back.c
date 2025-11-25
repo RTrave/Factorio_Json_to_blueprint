@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "lst.h"
+#include "../../../lib/hdr/lst.h"
 
 bool	lst_new_back(t_lst **lst, void *content)
 {

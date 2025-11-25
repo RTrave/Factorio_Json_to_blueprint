@@ -1,11 +1,11 @@
 #include <stdint.h>
 #include <stdlib.h>
-#include "file.h"
-#include "parr.h"
-#include "files.h"
-#include "arguments.h"
-#include "libblueprint.h"
-#include "error.h"
+#include "../lib/hdr/file.h"
+#include "../lib/hdr/parr.h"
+#include "../hdr/files.h"
+#include "../hdr/arguments.h"
+#include "../include/libblueprint.h"
+// #include "../hdr/error.h"
 
 int32_t	main(int32_t argc, char **argv)
 {

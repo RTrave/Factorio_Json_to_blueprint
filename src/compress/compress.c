@@ -2,11 +2,11 @@
 #include <string.h>
 #include <stdint.h>
 #include <sys/param.h>
-#include "lst.h"
-#include "parr.h"
+#include "../../lib/hdr/lst.h"
+#include "../../lib/hdr/parr.h"
 #include "zlib.h"
-#include "compress.h"
-#include "error.h"
+#include "../../hdr/compress.h"
+#include "../../hdr/error.h"
 
 bool	blueprint_compress(t_parr *dst, t_parr *src)
 {

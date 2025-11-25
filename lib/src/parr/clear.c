@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <stdlib.h>
-#include "parr.h"
+#include "../../../lib/hdr/parr.h"
 
 void	parr_clear(t_parr *parr, void (*del)(void*))
 {

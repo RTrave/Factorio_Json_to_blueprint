@@ -1,5 +1,5 @@
-#include "file.h"
-#include "parr.h"
+#include "../../lib/hdr/file.h"
+#include "../../lib/hdr/parr.h"
 
 void	get_arguments(t_parr *files, char **args)
 {

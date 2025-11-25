@@ -1,8 +1,8 @@
 #include <string.h>
-#include "parr.h"
-#include "compress.h"
-#include "base64.h"
-#include "libblueprint.h"
+#include "../lib/hdr/parr.h"
+#include "../hdr/compress.h"
+#include "../hdr/base64.h"
+#include "../include/libblueprint.h"
 
 char	*blueprint_json_to_string(const char *json)
 {

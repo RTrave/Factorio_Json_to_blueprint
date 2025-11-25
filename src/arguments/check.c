@@ -1,5 +1,5 @@
 #include <stdbool.h>
-#include "error.h"
+#include "../../hdr/error.h"
 
 bool	check_arguments(char **args)
 {

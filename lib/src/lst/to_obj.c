@@ -1,5 +1,5 @@
 #include <stddef.h>
-#include "lst.h"
+#include "../../../lib/hdr/lst.h"
 
 bool	lst_to_obj(void *dst, t_lst *lst, size_t (*get_len)(void*), size_t (*get_size)(void*),
 	bool (*alloc)(void*, size_t, size_t), void (*cpy)(void*, void*, size_t, size_t, size_t))

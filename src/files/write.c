@@ -1,6 +1,6 @@
 #include <string.h>
-#include "file.h"
-#include "error.h"
+#include "../../lib/hdr/file.h"
+#include "../../hdr/error.h"
 
 bool	write_file(t_file *file, char *string)
 {
