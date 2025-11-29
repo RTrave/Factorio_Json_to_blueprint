@@ -7,7 +7,7 @@
 /* ----- STRUCTURES ----- */
 
 // Pascal-style-string-like array
-typedef struct parr
+typedef struct	parr
 {
 	void	*arr;
 	size_t	obj_size;
