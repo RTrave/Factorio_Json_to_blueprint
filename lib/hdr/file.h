@@ -52,12 +52,12 @@ typedef struct	file
 	char	*name;
 	FILE	*stream;
 	uint8_t	info;
-}	t_file;
+}	file_t;
 
 /* ----- PROTOTYPES ----- */
 
 // file/
 //	open.c
-bool	file_open(t_file *file, char *mode);
+bool	file_open(file_t *file, char *mode);
 //	close.c
-void	file_close(t_file *file);
+void	file_close(file_t *file);

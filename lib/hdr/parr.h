@@ -12,7 +12,7 @@ typedef struct	parr
 	size_t	len;
 	size_t	obj_size;
 	void	*arr;
-}	t_parr;
+}	parr_t;
 
 /* ----- PROTOTYPES ----- */
 
@@ -23,6 +23,6 @@ size_t	parr_get_size(void *parr);
 bool	parr_alloc_arr(void *parr, size_t len, size_t size);
 void	parr_copy_arr(void *parr, void *src, size_t i_start, size_t len, size_t size);
 //	clear.c
-void	parr_clear(t_parr *parr, void (*del)(void*));
+void	parr_clear(parr_t *parr, void (*del)(void*));
 //	free.c
 void	parr_free(void *parr);

@@ -2,7 +2,7 @@
 #include "file.h"
 #include "error.h"
 
-bool	write_file(t_file *file, char *string)
+bool	write_file(file_t *file, char *string)
 {
 	if (file_open(file, FOPEN_MODE_WRITE) == 1)
 	{

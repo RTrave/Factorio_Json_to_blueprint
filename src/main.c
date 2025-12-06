@@ -10,20 +10,20 @@
 int32_t	main(int32_t argc, char **argv)
 {
 	(void)argc;
-	t_parr	files = DEFAULT_FILES;
+	parr_t	files = DEFAULT_FILES;
 	if (check_arguments(&argv[1]) == 1)
 		return (1);
 	get_arguments(&files, &argv[1]);
 	if (check_files(&files) == 1)
 		return (1);
-	char	*file = read_file(&((t_file *)files.arr)[INPUT]);
+	char	*file = read_file(&((file_t *)files.arr)[INPUT]);
 	if (file == NULL)
 		return (1);
 	char	*string = blueprint_json_to_string(file);
 	free(file);
 	if (string == NULL)
 		return (1);
-	bool	error = write_file(&((t_file *)files.arr)[OUTPUT], string);
+	bool	error = write_file(&((file_t *)files.arr)[OUTPUT], string);
 	free(string);
 	return (error);
 }

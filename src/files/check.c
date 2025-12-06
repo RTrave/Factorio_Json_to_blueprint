@@ -4,12 +4,12 @@
 #include "parr.h"
 #include "error.h"
 
-bool	check_files(t_parr *files)
+bool	check_files(parr_t *files)
 {
 	bool	error = 0;
 	for (size_t i = 0; i < files->len; i++)
 	{
-		t_file	*file = &((t_file *)files->arr)[i];
+		file_t	*file = &((file_t *)files->arr)[i];
 		if (GET_REQUIREMENT(file->info) == UNUSED)
 			continue;
 		if (access(file->name, F_OK) != 0)

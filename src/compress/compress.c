@@ -8,7 +8,7 @@
 #include "compress.h"
 #include "error.h"
 
-bool	blueprint_compress(t_parr *dst, t_parr *src)
+bool	blueprint_compress(parr_t *dst, parr_t *src)
 {
 	z_stream	stream = (z_stream){.zalloc = Z_NULL, .zfree = Z_NULL, .opaque = Z_NULL};
 	if (deflateInit(&stream, COMPRESSION_LEVEL) != Z_OK)
@@ -28,8 +28,8 @@ bool	blueprint_compress(t_parr *dst, t_parr *src)
 	}
 	size_t	len_input, i_input = 0;
 	int32_t	flush;
-	t_parr	*parr;
-	t_lst	*output = NULL;
+	parr_t	*parr;
+	lst_t	*output = NULL;
 	do
 	{
 		len_input = MIN(src->len * src->obj_size - i_input, CHUNK_SIZE);
@@ -54,7 +54,7 @@ bool	blueprint_compress(t_parr *dst, t_parr *src)
 				lst_clear(&output, parr_free);
 				return (1);
 			}
-			parr = malloc(sizeof(t_parr));
+			parr = malloc(sizeof(parr_t));
 			if (parr == NULL)
 			{
 				fprintf(stderr, "%s: %s: %s: %s: %s\n",

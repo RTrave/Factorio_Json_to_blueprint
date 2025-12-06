@@ -6,7 +6,7 @@
 #include "blueprint.h"
 #include "error.h"
 
-char	*blueprint_base64(t_parr *src)
+char	*blueprint_base64(parr_t *src)
 {
 	size_t	len_head = strlen(BLUEPRINT_STRING_HEAD);
 	char	*blueprint_string = malloc((src->len * 4 + 2) / 3 + 1 + len_head

@@ -12,10 +12,10 @@
 
 /* ----- TYPES DECLARATIONS ----- */
 
-typedef struct	parr	t_parr;
+typedef struct	parr	parr_t;
 
 /* ----- PROTOTYPES ----- */
 
 // compress/
 //	compress.c
-bool	blueprint_compress(t_parr *dst, t_parr *src);
+bool	blueprint_compress(parr_t *dst, parr_t *src);

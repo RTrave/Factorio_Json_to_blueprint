@@ -3,7 +3,7 @@
 #include "file.h"
 #include "error.h"
 
-char	*read_file(t_file *file)
+char	*read_file(file_t *file)
 {
 	if (file_open(file, FOPEN_MODE_READ) == 1)
 	{
