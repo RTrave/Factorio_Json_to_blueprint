@@ -9,8 +9,8 @@
 #define DEFAULT_FILES	\
 {\
 	.len = 2, \
-	.obj_size = sizeof(t_file), \
-	.arr = (t_file [])\
+	.obj_size = sizeof(file_t), \
+	.arr = (file_t [])\
 	{\
 		{\
 			.info = SET_REQUIREMENT(MANDATORY) | SET_PERMISSION(READ)\
@@ -33,14 +33,14 @@ enum
 
 /* ----- TYPES DECLATATIONS ----- */
 
-typedef struct	file	t_file;
+typedef struct	file	file_t;
 
 /* ----- PROTOTYPES ----- */
 
 // files/
 //	check.c
-bool	check_files(t_parr *files);
+bool	check_files(parr_t *files);
 //	read.c
-char	*read_file(t_file *file);
+char	*read_file(file_t *file);
 //	write.c
-bool	write_file(t_file *file, char *string);
+bool	write_file(file_t *file, char *string);

@@ -6,7 +6,7 @@
 
 char	*blueprint_json_to_string(const char *json)
 {
-	t_parr	compressed, uncompressed = (t_parr){.len = strlen(json), .obj_size = sizeof(*json),
+	parr_t	compressed, uncompressed = (parr_t){.len = strlen(json), .obj_size = sizeof(*json),
 		.arr = (void *)json};
 	if (blueprint_compress(&compressed, &uncompressed) == 1)
 		return (NULL);

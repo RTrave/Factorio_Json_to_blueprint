@@ -3,9 +3,9 @@
 #include "../../lib/hdr/file.h"
 #include "../../hdr/error.h"
 
-char	*read_file(t_file *file)
+char	*read_file(file_t *file)
 {
-	if (file_open(file, FOPEN_READ_MODE) == 1)
+	if (file_open(file, FOPEN_MODE_READ) == 1)
 	{
 		fprintf(stderr, "%s: %s: %s: %s: %s: \"%s\"\n",
 			EXECUTABLE_NAME, ERROR_FUNCTION, LIB_LIBC, FUNC_FOPEN, ERROR_OPEN_FILE,

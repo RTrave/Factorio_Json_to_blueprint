@@ -7,10 +7,10 @@
 
 /* ----- TYPES DECLARATIONS ----- */
 
-typedef struct	parr	t_parr;
+typedef struct	parr	parr_t;
 
 /* ----- PROTOTYPES ----- */
 
 // base64/
 //	base64.c
-char	*blueprint_base64(t_parr *src);
+char	*blueprint_base64(parr_t *src);
