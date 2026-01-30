@@ -8,3 +8,6 @@ string.txt
 *.swp
 *.o
 .nfs*
+.vscode/
+submodules/
+build/

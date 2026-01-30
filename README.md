@@ -47,6 +47,12 @@ make lib
 
 `make relibblueprint` removes the executable and library's object files and recompiles the library.
 
+### or with CMake
+
+`cmake -S . -B ./build [-DCMAKE_BUILD_TYPE=Release]` configure project 
+
+`cmake --build ./build [-- -j 6]` build project (shared lib and exec)
+
 ## USAGE
 
 ### Executable
