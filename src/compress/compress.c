@@ -8,6 +8,11 @@
 #include "../../hdr/compress.h"
 #include "../../hdr/error.h"
 
+#ifdef WIN32
+#define MAX(x, y) (((x) > (y)) ? (x) : (y))
+#define MIN(x, y) (((x) < (y)) ? (x) : (y))
+#endif
+
 bool	blueprint_compress(parr_t *dst, parr_t *src)
 {
 	z_stream	stream = (z_stream){.zalloc = Z_NULL, .zfree = Z_NULL, .opaque = Z_NULL};
