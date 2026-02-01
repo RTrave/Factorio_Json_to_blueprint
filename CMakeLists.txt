@@ -44,6 +44,7 @@ file(
         lib_files
         CONFIGURE_DEPENDS
         lib/*.c
+        src/wrapper.c # this file should be in lib/ no ???
 )
 
 file(
