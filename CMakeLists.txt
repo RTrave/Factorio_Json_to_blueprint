@@ -44,7 +44,7 @@ file(
         lib_files
         CONFIGURE_DEPENDS
         lib/*.c
-        src/wrapper.c # this file should be in lib/ no ???
+        src/*.c # Finally, library and executable have same src files ???
 )
 
 file(
@@ -66,7 +66,7 @@ target_link_libraries(
         ${PROJECT_NAME}
         PUBLIC
         base64
-        ZLIB::ZLIBSTATIC
+        ZLIB::ZLIB
 
 )
 
